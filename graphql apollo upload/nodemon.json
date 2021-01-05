@@ -1,0 +1,8 @@
+{
+  "env": {
+    "MONGO_USER": "main_admin",
+    "MONGO_PASSWORD": "Ubl3jwePbunuMDU4",
+    "MONGO_DB": "SellIt-mobile-app",
+    "PORT" : 8000
+  }
+}
