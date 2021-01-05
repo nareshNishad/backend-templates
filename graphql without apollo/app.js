@@ -24,7 +24,7 @@ app.use(
 
 mongoose
   .connect(
-    `mongodb+srv://${process.env.MONGO_USER}:${process.env.MONGO_PASSWORD}@mobile-app-backend.dxs48.mongodb.net/${process.env.MONGO_DB}?retryWrites=true&w=majority`,
+    `mongodb+srv://main_admin:Ubl3jwePbunuMDU4@mobile-app-backend.dxs48.mongodb.net/SellIt-mobile-app?retryWrites=true&w=majority`,
     { useNewUrlParser: true }
   )
   .then(() => {
