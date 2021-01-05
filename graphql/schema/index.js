@@ -4,12 +4,15 @@ const { userTypes, userQuery, userMutation } = require("./user");
 
 module.exports = buildSchema(`
 
-${userTypes}
+  ${userTypes}
 
-${userQuery}
+type RootQuery {
+  ${userQuery}
+}
 
-${userMutation}
-
+type RootMutation {
+  ${userMutation}
+}
 
 
 schema {

@@ -19,14 +19,10 @@ input UserInput {
 }
 `;
 const userQuery = `
-type RootQuery {
   login(email: String!, password: String!): AuthData!
-}
 `;
 const userMutation = `
- type RootMutation {
   createUser(userInput: UserInput): User
-}
  `;
 
 module.exports = {
