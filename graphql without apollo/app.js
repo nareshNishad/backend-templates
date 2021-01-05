@@ -22,13 +22,14 @@ app.use(
   })
 );
 
+const PORT = process.env.PORT || 8000;
 mongoose
   .connect(
     `mongodb+srv://main_admin:Ubl3jwePbunuMDU4@mobile-app-backend.dxs48.mongodb.net/SellIt-mobile-app?retryWrites=true&w=majority`,
     { useNewUrlParser: true }
   )
   .then(() => {
-    app.listen(3000);
+    app.listen(PORT);
   })
   .catch((err) => {
     console.log("DB Connection error", err);
