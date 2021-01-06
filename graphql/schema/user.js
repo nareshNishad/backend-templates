@@ -10,6 +10,7 @@ type AuthData {
   userId: ID!
   token: String!
   tokenExpiration: Int!
+  name: String
 }
 
 input UserInput {
