@@ -31,7 +31,7 @@ mongoose
     { useNewUrlParser: true }
   )
   .then(() => {
-    app.listen(3000);
+    app.listen(PORT);
   })
   .catch((err) => {
     console.log("DB Connection error", err);
